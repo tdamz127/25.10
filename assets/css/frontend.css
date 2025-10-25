@@ -1,0 +1,302 @@
+/* CSS cho Prepaid Pricing ở frontend - Giao diện mới */
+.prepaid-pricing-region-selection {
+    margin: 15px 0;
+    padding: 0;
+    max-width: 500px; /* Giới hạn độ rộng tối đa của form */
+}
+
+/* Form Styling */
+.prepaid-pricing-region-selection form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Field Styling */
+.prepaid-pricing-field {
+    margin-bottom: 15px;
+}
+
+.field-heading {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.field-input {
+    position: relative;
+}
+
+.field-input select {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 999px; /* Bo tròn lớn cho select box */
+    background-color: #fff;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* Custom face value input styling - SỬA LẠI */
+.face-value-custom-input {
+    position: relative;
+    max-width: 100%; /* Cho phép chiếm toàn bộ độ rộng */
+}
+
+/* Container cho input và currency */
+.input-currency-container {
+    display: flex; 
+    align-items: stretch;
+    border: none;
+    overflow: visible;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 5px; /* Tạo khoảng cách giữa input và currency */
+}
+
+.face-value-custom-input input {
+    width: calc(100% - 65px);
+    padding: 0 12px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 999px; /* Bo tròn lớn để tạo hình bầu dục */
+    background-color: #fff;
+    height: 40px;
+    flex: 1;
+    box-sizing: border-box;
+    line-height: 40px;
+    position: relative; /* Cần thiết cho vị trí của mũi tên */
+}
+
+.face-value-currency-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 15px;
+    color: #666;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 999px; /* Bo tròn lớn để tạo hình bầu dục giống input */
+    height: 40px;
+    white-space: nowrap;
+    width: 60px;
+    flex: 0 0 60px;
+    box-sizing: border-box;
+}
+
+/* Guide text for custom face value - hiển thị bên dưới input */
+.face-value-custom-guide {
+    display: block;
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+    clear: both; /* Đảm bảo nằm dưới tất cả các phần tử khác */
+}
+
+/* Price Display */
+.prepaid-pricing-price {
+    margin: 10px 0 15px;
+}
+
+.price-label {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add to Cart Section */
+.prepaid-pricing-cart-buttons {
+    display: flex;
+    align-items: flex-start !important; /* Đảm bảo căn theo cạnh trên */
+    margin: 15px 0 0;
+}
+
+/* Quantity Input Styling */
+.quantity-wrapper {
+    margin-right: 10px;
+}
+
+.quantity {
+    display: flex;
+    height: 35px !important;
+    min-height: 35px !important;
+    max-height: 35px !important;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.quantity button {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    height: 35px !important;
+    min-height: 35px !important;
+    max-height: 35px !important;
+    width: 35px;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 18px;
+    line-height: 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.quantity button:hover {
+    background: #e0e0e0;
+}
+
+.quantity .minus {
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+}
+
+.quantity .plus {
+    border-radius: 0 3px 3px 0;
+    border-left: none;
+}
+
+.quantity input {
+    height: 35px !important;
+    min-height: 35px !important;
+    max-height: 35px !important;
+    width: 40px;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+    outline: none;
+    font-weight: 500;
+    -moz-appearance: textfield;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+/* Button Group - GIẢM ĐỘ RỘNG */
+.button-group {
+    display: flex;
+    flex: 1;
+    max-width: 400px; /* Giới hạn độ rộng của nhóm nút */
+}
+
+/* Button Styling */
+.single_add_to_cart_button,
+.buy-now-button {
+    height: 35px !important;
+    min-height: 35px !important;
+    max-height: 35px !important;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 0;
+    padding: 0 15px !important;
+    line-height: 35px !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.single_add_to_cart_button {
+    flex: 1.5;
+    background-color: #e67e22 !important;
+    color: white;
+    margin-right: 10px;
+}
+
+.buy-now-button {
+    flex: 1;
+    background-color: #34495e !important;
+    color: white;
+}
+
+.single_add_to_cart_button:hover {
+    background-color: #d35400 !important;
+}
+
+.buy-now-button:hover {
+    background-color: #2c3e50 !important;
+}
+
+.single_add_to_cart_button:disabled,
+.buy-now-button:disabled {
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+/* Cải thiện mũi tên cho number input */
+.face-value-custom-input input[type=number]::-webkit-inner-spin-button, 
+.face-value-custom-input input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    position: absolute;
+    right: 5px; /* Vị trí bên phải */
+    top: 0;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin: 0;
+}
+
+/* Hide default WooCommerce elements when using our custom UI */
+.woocommerce-variation-add-to-cart,
+.woocommerce-variation-price,
+.woocommerce div.product form.cart:not(.prepaid-pricing-region-selection form.cart) {
+    display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .prepaid-pricing-cart-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .quantity-wrapper {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .quantity {
+        width: 100%;
+    }
+    
+    .quantity button {
+        flex: 0 0 35px;
+    }
+    
+    .quantity input {
+        flex: 1;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .single_add_to_cart_button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
