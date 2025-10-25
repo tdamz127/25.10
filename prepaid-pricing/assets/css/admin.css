@@ -1,0 +1,572 @@
+/**
+ * Admin CSS cho Prepaid Pricing Plugin
+ */
+
+/* =================== */
+/* CSS chung cho Admin */
+/* =================== */
+.prepaid-pricing-wrap {
+    margin: 10px 20px 0 2px;
+}
+
+.prepaid-pricing-wrap h1 {
+    margin-bottom: 15px;
+}
+
+/* =================== */
+/* Container chính */
+/* =================== */
+.prepaid-pricing-container {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.prepaid-pricing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.prepaid-pricing-header h2 {
+    margin: 0;
+    padding: 0;
+    color: #23282d;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.prepaid-pricing-content {
+    margin-top: 10px;
+}
+
+/* =================== */
+/* Form cài đặt */
+/* =================== */
+.prepaid-pricing-content .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+}
+
+.prepaid-pricing-content .form-table td {
+    padding: 15px 10px;
+}
+
+.prepaid-pricing-content .form-table input[type="number"],
+.prepaid-pricing-content .form-table input[type="text"] {
+    width: 250px;
+}
+
+.prepaid-pricing-content .description {
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    display: block;
+}
+
+/* =================== */
+/* Bảng tỷ giá */
+/* =================== */
+.rates-table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+#rates-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#rates-table thead th {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+#rates-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#rates-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#rates-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.rates-info {
+    margin: 10px 0;
+}
+
+.rates-info .last-updated {
+    font-style: italic;
+    color: #666;
+}
+
+#rates-update-message {
+    margin: 10px 0;
+    padding: 10px 15px;
+}
+
+#rates-update-message.updated {
+    border-left-color: #46b450;
+}
+
+#rates-update-message.error {
+    border-left-color: #dc3232;
+}
+
+/* =================== */
+/* Product Metabox */
+/* =================== */
+.prepaid-pricing-metabox {
+    margin: 15px 0;
+}
+
+.prepaid-pricing-enable {
+    margin-bottom: 20px;
+}
+
+.prepaid-pricing-enable input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.regions-heading {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Cấu trúc bảng chính */
+.prepaid-pricing-regions-table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.prepaid-pricing-regions-table th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    padding: 8px;
+    text-align: left;
+    font-size: 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.prepaid-pricing-regions-table td {
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.prepaid-pricing-regions-table tr {
+    height: 50px;
+}
+
+.prepaid-pricing-regions-table tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+.prepaid-pricing-regions-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Làm nổi bật các cột quan trọng */
+.prepaid-pricing-regions-table th:nth-child(1),
+.prepaid-pricing-regions-table th:nth-child(4),
+.prepaid-pricing-regions-table th:nth-child(6) {
+    background-color: #f4f4f4;
+}
+
+/* Tối ưu kích thước input và select */
+.prepaid-pricing-regions-table input[type="text"],
+.prepaid-pricing-regions-table input[type="number"],
+.prepaid-pricing-regions-table select {
+    width: 100%;
+    height: 30px !important;
+    padding: 2px 5px !important;
+    margin: 0 !important;
+    font-size: 12px !important;
+    border-radius: 3px;
+}
+
+/* Tối ưu kích thước từng cột */
+.prepaid-pricing-regions-table .region-name {
+    width: 100%;
+    min-width: 80px;
+}
+
+.prepaid-pricing-regions-table .region-currency {
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+
+.prepaid-pricing-regions-table .factor-x-input {
+    width: 60px; /* Tăng độ rộng lên để hiển thị được nhiều chữ số hơn */
+    max-width: 60px;
+    min-width: 60px;
+    font-size: 11px !important; /* Giảm font size để hiển thị được nhiều chữ số hơn */
+}
+
+.prepaid-pricing-regions-table .factor-y-input,
+.prepaid-pricing-regions-table .factor-z-input {
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+
+.prepaid-pricing-regions-table .rate-pair-select {
+    width: 100%;
+    min-width: 90px;
+}
+
+.prepaid-pricing-regions-table .face-value-mode-selector {
+    width: 100%;
+}
+
+.prepaid-pricing-regions-table .stock-status-select {
+    width: 100%;
+}
+
+/* Tùy chỉnh thêm để hiển thị input number tốt hơn */
+.prepaid-pricing-regions-table input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.prepaid-pricing-regions-table input[type="number"]::-webkit-inner-spin-button, 
+.prepaid-pricing-regions-table input[type="number"]::-webkit-outer-spin-button { 
+    opacity: 1;
+    height: 22px;
+}
+
+/* Giao diện cho mệnh giá tùy chỉnh */
+.face-value-custom-fields {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.face-value-custom-fields input {
+    width: calc(33% - 3px);
+}
+
+/* Nút thêm region */
+.add-region {
+    margin-top: 10px !important;
+    background-color: #f7f7f7 !important;
+    border-color: #ccc !important;
+    color: #555 !important;
+    font-weight: normal !important;
+    padding: 4px 10px !important;
+}
+
+.add-region:hover {
+    background-color: #f0f0f0 !important;
+    border-color: #aaa !important;
+}
+
+/* Nút thao tác */
+.actions-column {
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.action-buttons .button-small {
+    padding: 0 !important;
+    height: 28px !important;
+    width: 28px !important;
+    line-height: 26px !important;
+}
+
+.action-buttons .dashicons {
+    margin-top: 3px;
+    font-size: 16px;
+}
+
+.view-rates .dashicons {
+    color: #0073aa;
+}
+
+.remove-region .dashicons {
+    color: #cc0000;
+}
+
+/* Công thức tính giá */
+.prepaid-pricing-formula {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-left: 4px solid #00a0d2;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.prepaid-pricing-formula p {
+    margin: 5px 0;
+}
+
+.edit-global-link {
+    margin-left: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* =================== */
+/* Modal */
+/* =================== */
+.prepaid-pricing-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000; /* Đảm bảo modal hiển thị trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prepaid-pricing-modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+.prepaid-pricing-modal-close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prepaid-pricing-modal-close:hover,
+.prepaid-pricing-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.prepaid-pricing-modal h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.prepaid-pricing-modal-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.prepaid-pricing-modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px 0;
+}
+
+.prepaid-pricing-modal-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.prepaid-pricing-modal-body table th {
+    background: #f1f1f1;
+    padding: 8px;
+    text-align: left;
+}
+
+.prepaid-pricing-modal-body table td {
+    padding: 8px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* =================== */
+/* Hiệu ứng khi cập nhật */
+/* =================== */
+.updating-message::before {
+    display: inline-block;
+    content: "\f463";
+    font: normal 20px/1 dashicons;
+    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
+    margin: 0 5px 0 -2px;
+    vertical-align: bottom;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+/* =================== */
+/* Responsive */
+/* =================== */
+@media screen and (max-width: 782px) {
+    .prepaid-pricing-regions-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .prepaid-pricing-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .prepaid-pricing-header h2 {
+        margin-bottom: 15px;
+    }
+    
+    .prepaid-pricing-modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    /* Thêm style cho mobile */
+    .prepaid-pricing-regions-table td,
+    .prepaid-pricing-regions-table th {
+        padding: 5px 3px;
+        font-size: 11px;
+    }
+    
+    .prepaid-pricing-regions-table input,
+    .prepaid-pricing-regions-table select {
+        font-size: 11px !important;
+    }
+}
+
+/* =================== */
+/* Thông báo lỗi và cảnh báo */
+/* =================== */
+.prepaid-pricing-error {
+    border-left: 4px solid #dc3232;
+    background: #fdf2f2;
+    padding: 8px 12px;
+    margin: 5px 0 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.prepaid-pricing-warning {
+    border-left: 4px solid #ffba00;
+    background: #fff8e5;
+    padding: 8px 12px;
+    margin: 5px 0 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.prepaid-pricing-info {
+    border-left: 4px solid #00a0d2;
+    background: #f0f8ff;
+    padding: 8px 12px;
+    margin: 5px 0 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+/* =================== */
+/* Validation styles */
+/* =================== */
+.prepaid-pricing-regions-table input.has-error {
+    border-color: #dc3232;
+    box-shadow: 0 0 2px rgba(220, 50, 50, 0.8);
+}
+
+.prepaid-pricing-regions-table select.has-error {
+    border-color: #dc3232;
+    box-shadow: 0 0 2px rgba(220, 50, 50, 0.8);
+}
+
+/* =================== */
+/* Tooltip enhancements */
+/* =================== */
+.ui-tooltip {
+    padding: 8px;
+    max-width: 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background: #333;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.ui-tooltip .arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+}
+
+.ui-tooltip .arrow.top {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-color: #333 transparent transparent;
+}
+
+.ui-tooltip .arrow.bottom {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-color: transparent transparent #333;
+}
+
+/* =================== */
+/* Loading indicator */
+/* =================== */
+.prepaid-pricing-loading {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.prepaid-pricing-loading:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #f3f3f3;
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
